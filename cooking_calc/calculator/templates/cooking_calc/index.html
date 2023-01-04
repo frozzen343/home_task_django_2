@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
+<body>
+    <h1>Выберите блюдо</h1>
+    {% for title, url in pages.items %}
+        <a href="{{ url }}">{{ title }}</a>
+        <br>
+    {% endfor %}
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор блюд</title>
+</head>
+<body>
+    <h1>{{ dish.upper }}</h1>
+    <h1>Итого</h1>
+    <hr>    
+
+    {% for ingr, weight in recipe.items %}
+        {{ ingr }} {{ weight }} <br>
+    {% endfor %}
+
+</body>
+</html>
